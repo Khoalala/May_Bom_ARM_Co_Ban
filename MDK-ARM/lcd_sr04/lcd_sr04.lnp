@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"lcd_sr04\startup_stm32f103xb.o"
+"lcd_sr04\i2c-lcd.o"
+"lcd_sr04\main.o"
+"lcd_sr04\stm32f1xx_it.o"
+"lcd_sr04\stm32f1xx_hal_msp.o"
+"lcd_sr04\hc_sr04.o"
+"lcd_sr04\stm32f1xx_hal_gpio_ex.o"
+"lcd_sr04\stm32f1xx_hal_i2c.o"
+"lcd_sr04\stm32f1xx_hal.o"
+"lcd_sr04\stm32f1xx_hal_rcc.o"
+"lcd_sr04\stm32f1xx_hal_rcc_ex.o"
+"lcd_sr04\stm32f1xx_hal_gpio.o"
+"lcd_sr04\stm32f1xx_hal_dma.o"
+"lcd_sr04\stm32f1xx_hal_cortex.o"
+"lcd_sr04\stm32f1xx_hal_pwr.o"
+"lcd_sr04\stm32f1xx_hal_flash.o"
+"lcd_sr04\stm32f1xx_hal_flash_ex.o"
+"lcd_sr04\stm32f1xx_hal_exti.o"
+"lcd_sr04\stm32f1xx_hal_tim.o"
+"lcd_sr04\stm32f1xx_hal_tim_ex.o"
+"lcd_sr04\system_stm32f1xx.o"
+--strict --scatter "lcd_sr04\lcd_sr04.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "lcd_sr04.map" -o lcd_sr04\lcd_sr04.axf
